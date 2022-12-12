@@ -55,5 +55,11 @@ smoke_test:
             fi
       - destroy_environment  
                 
-
+# Sequential workflow
+workflows:
+  my_workflow:
+      jobs:
+        - create_infrastructure
+        - configure_infrastructure
+        - smoke_test
 
