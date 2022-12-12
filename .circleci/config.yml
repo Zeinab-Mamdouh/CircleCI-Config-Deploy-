@@ -39,7 +39,6 @@ configure_infrastructure:
 
 # Sequential workflow
 workflows:
-  my_workflow:
-      jobs:
-        - create_infrastructure
-        - configure_infrastructure
+    jobs:
+      - create_infrastructure
+      - configure_infrastructure
